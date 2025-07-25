@@ -1,3 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@keyframes fade-in-glass {
+	from { opacity: 0; transform: translateY(-24px) scale(0.98); }
+	to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+.animate-fade-in-glass {
+	animation: fade-in-glass 0.5s cubic-bezier(0.4,0,0.2,1);
+}

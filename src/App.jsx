@@ -1,11 +1,13 @@
-import Header from "./components/common/Header"
+import Home from "./pages/home/Home"
+import Navbar from "./components/common/Navbar"
 
 
 function App() {
   return (
-    <div>
-      <Header />
-    </div>
+    <>
+      <Navbar />
+      <Home />
+    </>
   )
 }
 

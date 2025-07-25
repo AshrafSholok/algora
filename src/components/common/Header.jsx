@@ -79,7 +79,7 @@ export default function Header() {
   }, []);
  
   return (
-  <Navbar className="mx-auto max-w-screen-2xl px-24 py-1 rounded-none">
+  <Navbar className="mx-auto max-w-screen-2xl px-24 py-1 rounded-none text-blue-gray-900">
       <div className="flex items-center justify-between text-blue-gray-900">
         <Typography
           as="a"
