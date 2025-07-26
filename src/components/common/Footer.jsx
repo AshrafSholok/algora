@@ -94,7 +94,7 @@
   {/* Footer Bottom */}
   <div className="max-w-screen-xl mx-auto flex flex-col md:flex-row justify-between items-center px-4 mt-8 text-sm text-gray-500 gap-2">
     <div>
-      Copyright ©2025 <span className="text-white font-semibold">Taiker</span>. All rights reserved{' '}
+      Copyright ©2025 <span className="text-white font-semibold">Algora+</span>. All rights reserved{' '}
       <span className="text-red-500">EnvyTheme</span>
     </div>
     <div className="flex gap-4">
