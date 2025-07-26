@@ -51,7 +51,7 @@ function Navbar() {
                             "transition-all duration-500 overflow-hidden " +
                             ((open ? "flex animate-fade-in-glass max-h-[500px] opacity-100 pointer-events-auto " : "max-h-0 opacity-0 pointer-events-none ") +
                             " absolute right-4 top-[60px] min-w-[200px] flex-col items-end bg-white/20 dark:bg-gray-900/40 backdrop-blur-xl rounded-xl shadow-2xl p-4 z-50 ") +
-                            " lg:static lg:flex lg:flex-row lg:items-center lg:bg-white/20 lg:dark:bg-gray-900/40 lg:backdrop-blur-xl lg:shadow-2xl lg:p-0 lg:animate-none lg:relative lg:w-auto lg:min-w-0 lg:top-0 lg:right-0 lg:rounded-none lg:max-h-none lg:opacity-100 lg:pointer-events-auto"
+                                " lg:static lg:flex lg:flex-row lg:items-center lg:bg-transparent lg:dark:bg-transparent lg:backdrop-blur-xl lg:shadow-2xl lg:p-0 lg:animate-none lg:relative lg:w-auto lg:min-w-0 lg:top-0 lg:right-0 lg:rounded-none lg:max-h-none lg:opacity-100 lg:pointer-events-auto"
                         }
                         id="mobile-menu-2"
                     >
