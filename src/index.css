@@ -10,3 +10,7 @@
 .animate-fade-in-glass {
 	animation: fade-in-glass 0.5s cubic-bezier(0.4,0,0.2,1);
 }
+
+body{
+	background-color: white;
+}

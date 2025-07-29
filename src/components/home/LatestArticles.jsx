@@ -1,11 +1,11 @@
 
 function LatestArticles() {
   return (
-    <section className="relative py-20 bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
+    <section className="relative py-20 bg-white">
                 <div className="max-w-screen-xl mx-auto px-4">
                     <div className="mb-12 text-center">
-                        <span className="uppercase text-blue-700 font-semibold tracking-wider text-sm mb-2 inline-block">Latest News</span>
-                        <h2 className="text-4xl font-extrabold text-gray-900 dark:text-white mb-2">Our Latest Articles And News<br />For Our Clients</h2>
+                        <span className="uppercase text-primary-500 font-semibold tracking-wider text-sm mb-2 inline-block">Latest News</span>
+                        <h2 className="text-4xl font-extrabold text-gray-900 mb-2">Our Latest Articles And News<br />For Our Clients</h2>
                     </div>
                     <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
                         {[1, 2, 3].map((_, i) => {
@@ -34,17 +34,17 @@ function LatestArticles() {
                             ][i];
 
                             return (
-                                <div key={i} className="group rounded-2xl bg-white/90 shadow-lg overflow-hidden flex flex-col hover:-translate-y-1 transition-transform duration-500">
+                                <div key={i} className="group rounded-2xl bg-white shadow-xl overflow-hidden flex flex-col hover:-translate-y-1 transition-transform duration-500">
                                     <div className="relative overflow-hidden h-60">
                                         <img src={articleData.image} alt={`Article ${i + 1}`} className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-105" />
                                     </div>
                                     <div className="p-6 flex-1 flex flex-col">
                                         <div className="text-xs text-gray-500 mb-1">
-                                            By: <span className={`${articleData.authorColor} font-medium`}>{articleData.author}</span> / {articleData.date}
+                                            By: <span className="text-primary-500 font-medium">{articleData.author}</span> / {articleData.date}
                                         </div>
-                                        <h3 className="text-lg font-semibold text-gray-900 mb-2 group-hover:text-blue-700 transition-colors duration-300">{articleData.title}</h3>
+                                        <h3 className="text-lg font-semibold text-gray-900 mb-2 group-hover:text-primary-500 transition-colors duration-300">{articleData.title}</h3>
                                         <p className="text-gray-600 mb-4 text-sm flex-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-                                        <a href="#" className="text-blue-600 text-sm font-medium inline-flex items-center gap-1 opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all duration-500 delay-150">
+                                        <a href="#" className="text-primary-500 text-sm font-medium inline-flex items-center gap-1 opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all duration-500 delay-150">
                                             Read More <span>→</span>
                                         </a>
                                     </div>

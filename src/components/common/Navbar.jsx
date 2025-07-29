@@ -7,10 +7,10 @@ function Navbar() {
     useEffect(() => {
         const onScroll = () => {
             if (window.scrollY > 100) {
-                headerref.current.style.background = "rgba(30, 41, 59, 0.7)";
+                headerref.current.style.background = "rgba(255, 255, 255, 0.9)";
                 headerref.current.style.backdropFilter = "blur(16px)";
                 headerref.current.style.borderRadius = "0.5rem";
-                headerref.current.style.boxShadow = "0 8px 32px 0 rgba(31, 38, 135, 0.37)";
+                headerref.current.style.boxShadow = "0 8px 32px 0 rgba(0, 0, 255, 0.1)";
             } else {
                 headerref.current.style.background = "transparent";
                 headerref.current.style.backdropFilter = "none";
@@ -31,7 +31,7 @@ function Navbar() {
                     </a>
                     <div className="flex items-center lg:order-2">
                         {/* <a href="#" className="text-gray-800 dark:text-white hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-gray-800">Log in</a> */}
-                        <a href="#" className="text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:bg-primary-600 dark:hover:bg-primary-700 focus:outline-none dark:focus:ring-primary-800">Get started</a>
+                        <a href="#" className="text-white bg-primary-500 hover:bg-primary-600 focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 transition-all duration-300">Get started</a>
                         <button
                             type="button"
                             className="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 "
@@ -57,7 +57,7 @@ function Navbar() {
                     >
                         <ul className="flex flex-col font-medium space-y-2 w-full lg:flex-row lg:space-x-8 lg:space-y-0 lg:mt-0 lg:items-center lg:w-auto">
                             <li>
-                                <a href="#" className="block py-2 pr-4 pl-3 text-white rounded  lg:bg-transparent lg:text-primary-700 lg:p-0 dark:text-white transition-all duration-300 hover:opacity-100" aria-current="page" >Home</a>
+                                <a href="/" className="block py-2 pr-4 pl-3 text-gray-900 rounded lg:bg-transparent lg:text-primary-500 lg:p-0 transition-all duration-300 hover:text-primary-600" aria-current="page" >Home</a>
                             </li>
                             {/* <li>
                                 <a href="#" className="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Services</a>
@@ -76,7 +76,7 @@ function Navbar() {
                             </li> */}
                             {links.map((link) => (
                                 <li key={link}>
-                                    <a href={`/${link.toLowerCase()}`} className="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700 transition-all duration-300 hover:opacity-100">
+                                    <a href={`/${link.toLowerCase()}`} className="block py-2 pr-4 pl-3 text-gray-600 hover:text-primary-500 lg:border-0 lg:p-0 transition-all duration-300">
                                         {link}
                                     </a>
                                 </li>

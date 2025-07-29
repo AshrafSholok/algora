@@ -10,7 +10,7 @@ import LatestArticles from '../../components/home/LatestArticles';
 function Home() {
     return (
         <Fragment>
-        <div className="min-h-screen w-full bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 transition-colors duration-500">
+        <div className="">
             <Landing />
             <SecondSection />
             <Whyus />

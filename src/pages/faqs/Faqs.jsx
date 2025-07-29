@@ -2,13 +2,13 @@ import { useState } from 'react';
 
 function Faqs() {
   return (
-    <div className="min-h-screen w-full bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
+    <div className="min-h-screen w-full bg-white">
       <section className="relative py-20">
         <div className="max-w-screen-md mx-auto px-4">
           <div className="mb-12 text-center">
-            <span className="uppercase text-blue-700 font-semibold tracking-wider text-sm mb-2 inline-block">FAQ</span>
-            <h2 className="text-4xl font-extrabold text-gray-900 dark:text-white mb-2">Frequently Asked Questions</h2>
-            <p className="text-lg text-gray-600 dark:text-gray-300">Everything you need to know about our platform.</p>
+            <span className="uppercase text-primary-500 font-semibold tracking-wider text-sm mb-2 inline-block">FAQ</span>
+            <h2 className="text-4xl font-extrabold text-gray-900 mb-2">Frequently Asked Questions</h2>
+            <p className="text-lg text-gray-600">Everything you need to know about our platform.</p>
           </div>
           <div className="space-y-4">
             {[{
@@ -36,14 +36,14 @@ function Faqs() {
 function FAQItem({ question, answer }) {
     const [open, setOpen] = useState(false);
     return (
-        <div className={"rounded-xl bg-white/80 dark:bg-gray-800/70 shadow-lg overflow-hidden transition-all duration-400 " + (open ? 'ring-2 ring-blue-400' : '')}>
+        <div className={"rounded-xl bg-white shadow-lg overflow-hidden transition-all duration-400 " + (open ? 'ring-2 ring-primary-500' : '')}>
             <button
-                className="w-full flex justify-between items-center px-6 py-5 text-left focus:outline-none focus:ring-2 focus:ring-blue-400 transition-colors duration-300"
+                className="w-full flex justify-between items-center px-6 py-5 text-left focus:outline-none focus:ring-2 focus:ring-primary-500 transition-colors duration-300"
                 onClick={() => setOpen(o => !o)}
                 aria-expanded={open}
             >
-                <span className="text-lg font-semibold text-gray-900 dark:text-white">{question}</span>
-                <svg className={"w-6 h-6 text-blue-500 transform transition-transform duration-300 " + (open ? 'rotate-180' : '')} fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" /></svg>
+                <span className="text-lg font-semibold text-gray-900">{question}</span>
+                <svg className={"w-6 h-6 text-primary-500 transform transition-transform duration-300 " + (open ? 'rotate-180' : '')} fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" /></svg>
             </button>
             <div
                 className={"px-6 pb-5 text-gray-700 dark:text-gray-200 text-base transition-all duration-400 " + (open ? 'max-h-40 opacity-100' : 'max-h-0 opacity-0')}
