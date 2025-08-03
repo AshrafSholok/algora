@@ -11,7 +11,6 @@ import OurServices from '../../components/home/OurServices';
 function Home() {
     return (
         <Fragment>
-        <div className="">
             <Landing />
             <OurServices />
             <SecondSection />
@@ -19,7 +18,6 @@ function Home() {
             <WhyDifferent />
             <BrandSolutions />
             <LatestArticles />
-        </div>
         </Fragment>
     )
 }
