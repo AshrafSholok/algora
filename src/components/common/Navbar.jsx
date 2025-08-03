@@ -76,7 +76,7 @@ function Navbar() {
                             </li> */}
                             {links.map((link) => (
                                 <li key={link}>
-                                    <a href={`/${link.toLowerCase()}`} className="block py-2 pr-4 pl-3 text-gray-600 hover:text-primary-500 lg:border-0 lg:p-0 transition-all duration-300">
+                                    <a href={`/${link.toLowerCase()}`} className="block py-2 pr-4 pl-3 text-gray-500 hover:text-primary-400 lg:border-0 lg:p-0 transition-all duration-300">
                                         {link}
                                     </a>
                                 </li>

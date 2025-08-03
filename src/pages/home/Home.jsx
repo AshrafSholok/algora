@@ -5,6 +5,7 @@ import Whyus from '../../components/home/Whyus';
 import WhyDifferent from '../../components/home/WhyDifferent';
 import BrandSolutions from '../../components/home/BrandSolutions';
 import LatestArticles from '../../components/home/LatestArticles';
+import OurServices from '../../components/home/OurServices';
 
 
 function Home() {
@@ -12,6 +13,7 @@ function Home() {
         <Fragment>
         <div className="">
             <Landing />
+            <OurServices />
             <SecondSection />
             <Whyus />
             <WhyDifferent />

@@ -1,7 +1,11 @@
 import { useState } from 'react';
+import Hero from '../../components/common/Hero';
+import FaqsForm from './FaqsForm';
 
 function Faqs() {
   return (
+    <>
+    <Hero title="FAQs" />
     <div className="min-h-screen w-full bg-white">
       <section className="relative py-20">
         <div className="max-w-screen-md mx-auto px-4">
@@ -12,13 +16,13 @@ function Faqs() {
           </div>
           <div className="space-y-4">
             {[{
-              q: 'What is Taiker and who is it for?',
-              a: 'Taiker is a modern platform designed for businesses and developers to streamline their workflow and boost productivity.'
+              q: 'What is algora and who is it for?',
+              a: 'algora is a modern platform designed for businesses and developers to streamline their workflow and boost productivity.'
             }, {
               q: 'How secure is my data?',
               a: 'We use industry-leading security practices and encryption to keep your data safe and private.'
             }, {
-              q: 'Can I try Taiker for free?',
+              q: 'Can I try algora for free?',
               a: 'Yes! We offer a free trial so you can experience all features before committing.'
             }, {
               q: 'How do I contact support?',
@@ -28,17 +32,19 @@ function Faqs() {
             ))}
           </div>
         </div>
+        <FaqsForm />
       </section>
     </div>
+    </>
   )
 }
 // FAQItem component with animation
 function FAQItem({ question, answer }) {
     const [open, setOpen] = useState(false);
     return (
-        <div className={"rounded-xl bg-white shadow-lg overflow-hidden transition-all duration-400 " + (open ? 'ring-2 ring-primary-500' : '')}>
+        <div className={"rounded-xl bg-white shadow-lg overflow-hidden transition-all duration-400 " + (open ? '' : '')}>
             <button
-                className="w-full flex justify-between items-center px-6 py-5 text-left focus:outline-none focus:ring-2 focus:ring-primary-500 transition-colors duration-300"
+                className="w-full flex justify-between items-center px-6 py-5 text-left focus:outline-none focus:ring-1 focus:ring-primary-500 transition-colors duration-300"
                 onClick={() => setOpen(o => !o)}
                 aria-expanded={open}
             >
@@ -46,7 +52,7 @@ function FAQItem({ question, answer }) {
                 <svg className={"w-6 h-6 text-primary-500 transform transition-transform duration-300 " + (open ? 'rotate-180' : '')} fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" /></svg>
             </button>
             <div
-                className={"px-6 pb-5 text-gray-700 dark:text-gray-200 text-base transition-all duration-400 " + (open ? 'max-h-40 opacity-100' : 'max-h-0 opacity-0')}
+                className={"px-6 pb-5 text-gray-700 dark:text-gray-600 text-base transition-all duration-400 " + (open ? 'max-h-40 opacity-100 pt-4' : 'max-h-0 opacity-0')}
                 style={{ overflow: 'hidden' }}
             >
                 <div className="pt-1 animate-fade-in">
