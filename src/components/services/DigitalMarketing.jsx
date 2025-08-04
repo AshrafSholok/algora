@@ -1,4 +1,4 @@
-import React from 'react';
+import { Link, useParams } from 'react-router-dom'
 
 const DigitalMarketing = () => {
     return (
@@ -8,7 +8,7 @@ const DigitalMarketing = () => {
                     {/* Left side - Image/Illustration */}
                     <div className="lg:w-1/2 w-full">
                         <img
-                            src="../../src/assets/svg/services/digitalmarketing.png"
+                            src="../../src/assets/svg/services/digital-marketing.png"
                             alt="Digital Marketing Illustration"
                             className="w-full h-auto rounded-lg"
                         />
@@ -61,9 +61,12 @@ const DigitalMarketing = () => {
                             </div>
                         </div>
 
-                        <button className="bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-8 rounded-lg transition duration-300">
+                        <Link
+                            to={`/services/digital-marketing`}
+                            className="bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-8 rounded-lg transition duration-300 inline-block"
+                        >
                             READ MORE
-                        </button>
+                        </Link>
                     </div>
                 </div>
             </div>

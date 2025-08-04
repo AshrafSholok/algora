@@ -11,7 +11,7 @@ const Hero = ({ title }) => {
           <h1 className="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-5xl text-gray-900">
             {title}
           </h1>
-          <div className="w-16 h-[2.5px] bg-primary-500"></div> {/* Primary line for contrast on dark bg */}
+          <div className="w-[5rem] h-[2.5px] bg-primary-500"></div> {/* Primary line for contrast on dark bg */}
         </div>
       </div>
     </section>

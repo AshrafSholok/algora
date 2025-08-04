@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const UIUXDesign = () => {
     return (
@@ -8,7 +9,7 @@ const UIUXDesign = () => {
                     {/* Left side - Image/Illustration */}
                     <div className="lg:w-1/2 w-full">
                         <img
-                            src="../../src/assets/svg/services/uiux.svg"
+                            src="../../src/assets/svg/services/ui-ux-design.png"
                             alt="UI/UX Design Illustration"
                             className="w-full h-auto rounded-lg"
                         />
@@ -61,9 +62,12 @@ const UIUXDesign = () => {
                             </div>
                         </div>
 
-                        <button className="bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-8 rounded-lg transition duration-300">
-                            EXPLORE OUR PROCESS
-                        </button>
+                        <Link
+                            to={`/services/ui-ux-design`}
+                            className="bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-8 rounded-lg transition duration-300 inline-block"
+                        >
+                            READ MORE
+                        </Link>
                     </div>
                 </div>
             </div>
