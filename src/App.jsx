@@ -5,6 +5,7 @@ import Faqs from "./pages/faqs/Faqs"
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import Services from "./pages/services/Services"
 import ServiceDetail from "./pages/services/ServicesDetails"
+import About from "./pages/about/About"
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
           <Route path="/faqs" element={<Faqs />} />
           <Route path="/services" element={<Services />} />
           <Route path="/services/:serviceId" element={<ServiceDetail />} />
+          <Route path="/about" element={<About />} />
           {/* Add more routes as needed */}
         </Routes>
         <Footer />
