@@ -18,6 +18,7 @@ import {
   ShoppingCartIcon,   // E-commerce
   HashtagIcon         // Social media
 } from '@heroicons/react/24/outline';
+import LetsTalk from '../../components/common/LetsTalk';
 
 const serviceData = {
   'digital-marketing': {
@@ -254,6 +255,7 @@ const ServiceDetail = () => {
           </div>
         </div>
       </section>
+      <LetsTalk />
     </>
   );
 };
