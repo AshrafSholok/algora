@@ -1,4 +1,4 @@
-import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaFacebookF, FaInstagram, FaTiktok } from "react-icons/fa";
+import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaFacebookF, FaInstagram, FaTiktok, FaLinkedin } from "react-icons/fa";
 
 
 function ContactSection() {
@@ -50,7 +50,7 @@ function ContactSection() {
             <h4 className="font-semibold mb-2">Follow Us</h4>
             <p className="text-gray-600 mb-4">Follow us on social media</p>
             <div className="flex gap-4">
-              {[FaFacebookF, FaInstagram, FaTiktok].map((Icon, i) => (
+              {[FaFacebookF, FaInstagram, FaTiktok, FaLinkedin].map((Icon, i) => (
                 <a
                   key={i}
                   href="#"
