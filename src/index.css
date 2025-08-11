@@ -14,3 +14,9 @@
 body{
 	background-color: white;
 }
+
+@layer components {
+  .input-style-light {
+    @apply w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500;
+  }
+}
