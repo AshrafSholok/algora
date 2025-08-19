@@ -7,6 +7,7 @@ import Services from "./pages/services/Services"
 import ServiceDetail from "./pages/services/ServicesDetails"
 import About from "./pages/about/About"
 import ContactUs from "./pages/contactUs/ContactUs"
+import Blog from "./pages/blog/Blog"
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
           <Route path="/services/:serviceId" element={<ServiceDetail />} />
           <Route path="/about" element={<About />} />
           <Route path="/contactus" element={<ContactUs />} />
+          <Route path="/blog" element={<Blog />}/>
           {/* Add more routes as needed */}
         </Routes>
         <Footer />
