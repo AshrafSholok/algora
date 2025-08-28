@@ -19,7 +19,7 @@ function OurServices() {
                 </svg>
               </div>
               <h3 className="text-xl font-semibold mb-2 group-hover:text-primary-600 transition-colors duration-300">Web Development</h3>
-              <p className="text-gray-600 group-hover:text-gray-700 text-center">Responsive and scalable websites built for performance and usability.</p>
+              <p className="text-gray-600 group-hover:text-gray-700 text-center">Modern, responsive, and SEO-friendly websites tailored to your business needs</p>
             </div>
           </div>
 
@@ -32,7 +32,7 @@ function OurServices() {
                 </svg>
               </div>
               <h3 className="text-xl font-semibold mb-2 group-hover:text-primary-600 transition-colors duration-300">Mobile App Development</h3>
-              <p className="text-gray-600 group-hover:text-gray-700 text-center">Cross-platform mobile apps with seamless user experiences.</p>
+              <p className="text-gray-600 group-hover:text-gray-700 text-center">Native & cross-platform apps that deliver seamless experiences across iOS and Android.</p>
             </div>
           </div>
 
@@ -45,7 +45,7 @@ function OurServices() {
                 </svg>
               </div>
               <h3 className="text-xl font-semibold mb-2 group-hover:text-primary-600 transition-colors duration-300">Cloud Solutions</h3>
-              <p className="text-gray-600 group-hover:text-gray-700 text-center">Secure and scalable cloud infrastructure to support your business growth.</p>
+              <p className="text-gray-600 group-hover:text-gray-700 text-center">Scale securely with cloud-native applications and infrastructure.</p>
             </div>
           </div>
 
@@ -58,7 +58,7 @@ function OurServices() {
                 </svg>
               </div>
               <h3 className="text-xl font-semibold mb-2 group-hover:text-primary-600 transition-colors duration-300">UI/UX Design</h3>
-              <p className="text-gray-600 group-hover:text-gray-700 text-center">Beautiful and intuitive interfaces designed for conversion and retention.</p>
+              <p className="text-gray-600 group-hover:text-gray-700 text-center">User-focused designs that drive engagement and retention.</p>
             </div>
           </div>
 
@@ -71,7 +71,7 @@ function OurServices() {
                 </svg>
               </div>
               <h3 className="text-xl font-semibold mb-2 group-hover:text-primary-600 transition-colors duration-300">Digital Marketing</h3>
-              <p className="text-gray-600 group-hover:text-gray-700 text-center">Reach your audience with targeted, data-driven marketing strategies.</p>
+              <p className="text-gray-600 group-hover:text-gray-700 text-center">Data-driven campaigns that convert visitors into loyal customers.</p>
             </div>
           </div>
 
@@ -84,7 +84,7 @@ function OurServices() {
                 </svg>
               </div>
               <h3 className="text-xl font-semibold mb-2 group-hover:text-primary-600 transition-colors duration-300">Cybersecurity</h3>
-              <p className="text-gray-600 group-hover:text-gray-700 text-center">Protect your data and systems with industry-leading security solutions.</p>
+              <p className="text-gray-600 group-hover:text-gray-700 text-center">Keep your data safe with enterprise-grade protection.</p>
             </div>
           </div>
         </div>

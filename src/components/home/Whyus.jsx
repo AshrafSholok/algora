@@ -15,7 +15,7 @@ function Whyus() {
                             <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M13 16h-1v-4h-1m1-4h.01M12 20a8 8 0 100-16 8 8 0 000 16z" /></svg>
                         </div>
                         <h3 className="text-xl font-bold text-gray-900 mb-2">Secure & Reliable</h3>
-                        <p className="text-gray-600 text-center">Your data is protected with industry-leading security and uptime.</p>
+                        <p className="text-gray-600 text-center">Enterprise-level security and 99.9% uptime guarantee.</p>
                     </div>
                     {/* Feature Card 2 */}
                     <div className="rounded-2xl bg-white shadow-xl p-8 flex flex-col items-center transition-transform hover:-translate-y-2 hover:shadow-2xl duration-[400ms]">
@@ -31,7 +31,7 @@ function Whyus() {
                             <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M12 8v4l3 3m6 0a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
                         </div>
                         <h3 className="text-xl font-bold text-gray-900 mb-2">24/7 Support</h3>
-                        <p className="text-gray-600 text-center">Our team is always here to help you, any time, any day.</p>
+                        <p className="text-gray-600 text-center">Always available to solve your challenges, anytime, anywhere.</p>
                     </div>
                 </div>
             </div>

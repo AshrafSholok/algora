@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 
 function Navbar() {
     const [open, setOpen] = useState(false);
-    const [links, setLinks] = useState(["Services", "Projects", "Blog", "About", "FAQs"]);
+    const [links, setLinks] = useState(["Services", "Portfolio", "Blog", "About", "FAQs"]);
     const headerref = useRef();
     useEffect(() => {
         const onScroll = () => {

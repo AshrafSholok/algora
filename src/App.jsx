@@ -8,6 +8,7 @@ import ServiceDetail from "./pages/services/ServicesDetails"
 import About from "./pages/about/About"
 import ContactUs from "./pages/contactUs/ContactUs"
 import Blog from "./pages/blog/Blog"
+import Portfolio from "./pages/portfolio/Portfolio"
 
 
 function App() {
@@ -23,6 +24,8 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/contactus" element={<ContactUs />} />
           <Route path="/blog" element={<Blog />}/>
+          <Route path="/portfolio" element={<Portfolio />}/>
+
           {/* Add more routes as needed */}
         </Routes>
         <Footer />
