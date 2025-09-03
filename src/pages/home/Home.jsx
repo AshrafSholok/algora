@@ -6,6 +6,7 @@ import WhyDifferent from '../../components/home/WhyDifferent';
 import BrandSolutions from '../../components/home/BrandSolutions';
 import LatestArticles from '../../components/home/LatestArticles';
 import OurServices from '../../components/home/OurServices';
+import Cta from '../../components/home/Cta';
 
 
 function Home() {
@@ -18,6 +19,7 @@ function Home() {
             <WhyDifferent />
             <BrandSolutions />
             <LatestArticles />
+            <Cta />
         </Fragment>
     )
 }
