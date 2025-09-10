@@ -1,6 +1,3 @@
-import React from 'react'
-import { motion } from "framer-motion";
-
 function Cta() {
   return (
     <section className="py-20 bg-primary-500 text-white text-center">

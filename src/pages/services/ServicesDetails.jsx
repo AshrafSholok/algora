@@ -1,11 +1,8 @@
 // pages/ServiceDetail.jsx
-
-import { Fragment } from 'react';
 import { useParams } from 'react-router-dom';
 import Hero from '../../components/common/Hero';
 import LetsTalk from '../../components/common/LetsTalk';
-
-import serviceData from './serviceData';
+import serviceData from '../../data/services/serviceData';
 import {
   MagnifyingGlassIcon,
   ChartBarIcon,
@@ -20,6 +17,8 @@ import {
   ShoppingCartIcon,
   HashtagIcon
 } from '@heroicons/react/24/outline';
+import { Fragment } from 'react';
+import Cta from '../../components/home/Cta';
 
 const iconMap = {
   MagnifyingGlassIcon,
@@ -45,6 +44,7 @@ const ServiceDetail = () => {
   return (
     <>
       <Hero title={service.title} />
+
       <section className="py-20 bg-white w-full">
         <div className="w-full mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col lg:flex-row items-center gap-12 max-w-7xl mx-auto">
@@ -81,8 +81,35 @@ const ServiceDetail = () => {
                 className="w-full h-auto rounded-lg"
               />
             </div>
+            
           </div>
         </div>
+      </section>
+
+      {/* why choose us section */}
+      <section>
+        <div className="py-10 bg-white w-full"></div>
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            {service.whyChooseUs && service.whyChooseUs.map((item, idx) => (
+              <div key={idx} className="mb-12">
+                <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">{item.title}</h2>
+                <p className="text-gray-700 text-base md:text-lg mb-8 text-center">{item.description}</p>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-8">
+                  {item.features.map((feature, i) => (
+                    <div key={i} className="flex items-start bg-gray-100 rounded-xl px-4 py-3 transition-transform hover:translate-x-1 hover:shadow-2xl duration-300">
+                      <svg className="w-6 h-6 text-blue-600 mt-1 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                      </svg>
+                      <span className="text-gray-700 font-semibold">{feature}</span>
+                    </div>
+                  ))}
+                </div>
+                <div className="bg-blue-50 rounded-lg p-6 text-center">
+                  <span className="text-blue-700 font-semibold text-lg">{item.result}</span>
+                </div>
+              </div>
+            ))}
+          </div>
       </section>
 
       {/* How We Work Lifecycle Section */}
@@ -112,7 +139,8 @@ const ServiceDetail = () => {
           </div>
         </div>
       </section>
-      <LetsTalk />
+      {/* <LetsTalk /> */}
+      <Cta />
     </>
   );
 };

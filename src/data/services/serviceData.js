@@ -1,6 +1,5 @@
 // src/pages/services/serviceData.js
 
-
 const serviceData = {
     'digital-marketing': {
         title: 'Digital Marketing',
@@ -41,7 +40,23 @@ const serviceData = {
                 description: 'We provide detailed reports and actionable insights to guide future efforts.',
                 icon: "ShoppingCartIcon"
             }
-        ]
+        ],
+        whyChooseUs: [
+            {
+                title: "Why choose us for Digital Marketing?",
+                description:
+                    "We go beyond simple ads—we create strategies that build your brand, attract customers, and turn clicks into long-term relationships.",
+                features: [
+                    "SEO optimization to rank higher on Google.",
+                    "Targeted social media campaigns that reach the right audience.",
+                    "Data-driven marketing with real performance tracking.",
+                    "Content creation that builds authority and trust.",
+                    "Email marketing and automation for consistent engagement.",
+                ],
+                result:
+                    "Your business grows faster with more visibility, more leads, and more sales—without wasting money on ineffective ads.",
+            },
+        ],
     },
     'web-development': {
         title: 'Web Design & Development',
@@ -82,7 +97,21 @@ const serviceData = {
                 description: 'We train your team and provide documentation for smooth operation.',
                 icon: "UserGroupIcon"
             }
-        ]
+        ],
+        whyChooseUs: [
+            {
+                title: "Why choose us to build your website?",
+                description: "Because we don’t just build a website… we create a complete digital platform that reflects your brand’s power and builds trust with your customers from the very first click.",
+                features: [
+                    "Modern, responsive design for both mobile and desktop.",
+                    "High loading speed to keep visitors from leaving.",
+                    "Smooth navigation & user-friendly experience.",
+                    "Integration with online payment & booking systems.",
+                    "Continuous support & maintenance to keep your site running 24/7."
+                ],
+                result: "Your website becomes a professional face for your business and a sales representative working for you around the clock—without asking for a salary."
+            }
+        ],
     },
     'ui-ux-design': {
         title: 'UI/UX Design',
@@ -118,7 +147,23 @@ const serviceData = {
                 description: 'We validate designs with real users and iterate based on feedback.',
                 icon: "BugAntIcon"
             },
-        ]
+        ],
+        whyChooseUs: [
+            {
+                title: "Why choose us for UI/UX Design?",
+                description:
+                    "We craft experiences, not just interfaces. Our UI/UX design is built to delight users, maximize engagement, and keep your audience coming back.",
+                features: [
+                    "User-centric approach focused on real customer behavior.",
+                    "Intuitive and visually appealing layouts.",
+                    "Seamless navigation that reduces drop-offs.",
+                    "Wireframes and prototypes tested before launch.",
+                    "Design consistency across all devices and platforms.",
+                ],
+                result:
+                    "Your product becomes more engaging, user-friendly, and professional—leading to higher customer satisfaction and conversions.",
+            },
+        ],
     },
     'mobile-app-development': {
         title: 'Mobile App Development',
@@ -159,7 +204,23 @@ const serviceData = {
                 description: 'We gather user feedback and continuously improve the app.',
                 icon: "ShieldCheckIcon"
             }
-        ]
+        ],
+        whyChooseUs: [
+            {
+                title: "Why choose us for Mobile App Development?",
+                description:
+                    "We don’t just create apps; we build mobile solutions that scale with your business and deliver smooth performance for your users.",
+                features: [
+                    "Cross-platform apps (iOS & Android) with one codebase.",
+                    "Fast and responsive apps optimized for performance.",
+                    "Offline functionality for uninterrupted usage.",
+                    "Integration with APIs, payment systems, and third-party tools.",
+                    "Regular updates and support to ensure stability.",
+                ],
+                result:
+                    "Your business is literally in your customer’s pocket—making it easier to reach, engage, and retain them anytime, anywhere.",
+            },
+        ],
     }
 };
 
