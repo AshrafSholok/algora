@@ -9,7 +9,7 @@ function Landing() {
             {/* Content */}
             <div className="relative grid max-w-screen-xl px-4 py-32 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
                 <div className="mr-auto place-self-center lg:col-span-7">
-                    <h1 className="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-5xl text-gray-900">Your Vision, Our Code — Building Scalable Software That Works for You</h1>
+                    <h1 className="max-w-2xl mb-4 text-4xl font-bold tracking-tight leading-none md:text-5xl xl:text-5xl text-gray-900">Your Vision, Our Code — Building Scalable Software That Works for You</h1>
                     <p className="max-w-2xl mb-6 font-light text-gray-600 lg:mb-8 md:text-lg lg:text-xl">From startups to enterprises, we design and develop powerful digital solutions that grow with your business.</p>
                     <a href="/contactus" className="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-primary-500 hover:bg-primary-600 focus:ring-4 focus:ring-primary-200 transition-all duration-300">
                         Start Your Project
