@@ -1,4 +1,5 @@
-
+import { MdOutlineAutoMode } from "react-icons/md";
+import { VscTypeHierarchySuper } from "react-icons/vsc";
 
 function OurServices() {
   return (
@@ -78,15 +79,26 @@ function OurServices() {
           {/* Service Card 6 */}
           <div className="bg-white rounded-xl shadow-md p-6 hover:shadow-xl transition-all duration-300 group hover:-translate-y-2 hover:bg-primary-50 flex flex-col items-center h-full">
             <div className="flex-1 flex flex-col items-center justify-center">
+
+              {/* Icon */}
               <div className="text-primary-500 mb-6 transform group-hover:scale-110 transition-transform duration-300">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-16 w-16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                </svg>
+                {/* <VscTypeHierarchySuper className="h-16 w-16" /> */}
+                <MdOutlineAutoMode className="h-16 w-16" />
               </div>
-              <h3 className="text-xl font-semibold mb-2 group-hover:text-primary-600 transition-colors duration-300">Cybersecurity</h3>
-              <p className="text-gray-600 group-hover:text-gray-700 text-center">Keep your data safe with enterprise-grade protection.</p>
+
+              {/* Title */}
+              <h3 className="text-xl font-semibold mb-2 group-hover:text-primary-600 transition-colors duration-300">
+                AI Automation
+              </h3>
+
+              {/* Description */}
+              <p className="text-gray-600 group-hover:text-gray-700 text-center">
+                Streamline your workflows with intelligent automation powered by AI.
+              </p>
             </div>
           </div>
+
+
         </div>
       </div>
     </section>

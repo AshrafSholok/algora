@@ -29,7 +29,7 @@ function Navbar() {
           : "bg-transparent"
       }`}
     >
-      <nav className="max-w-7xl mx-auto flex items-center justify-between px-6 lg:px-12 py-4">
+      <nav className="max-w-7xl mx-auto flex items-center justify-between px-6  py-4">
         
         {/* Logo */}
         <a href="/" className="flex items-center space-x-2">

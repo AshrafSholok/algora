@@ -11,9 +11,9 @@ function Footer() {
         <div>
           <div className="flex items-center text-sm">
             <span className="text-blue-500 text-2xl mr-3"><FaPhoneAlt /></span>
-            MON TO FRI : 10:00AM - 06:00PM
+            24/7 SUPPORT
           </div>
-          <div className="text-lg font-bold text-white ml-7">+123 54214 578 52</div>
+          <div className="text-lg font-bold text-white ml-7">+20 10 11286 076</div>
         </div>
         <div>
           <div className="flex items-center text-sm">
@@ -29,23 +29,23 @@ function Footer() {
           </div>
           <div className="flex items-center gap-3 text-xl ml-7 mt-2">
             {/* Facebook */}
-            <a href="#" className="hover:text-white transition duration-300" aria-label="Facebook">
+            <a href="https://www.facebook.com/share/1DffGa4Q6k/"  target="_blank" className="hover:text-white transition duration-300" aria-label="Facebook">
               <FaFacebookF />
             </a>
             {/* Instagram */}
-            <a href="#" className="hover:text-white transition duration-300" aria-label="Instagram">
+            <a href="https://www.instagram.com/algora_plus?igsh=MXN2MGxlN3A5Mzdkbg==" target="_blank" className="hover:text-white transition duration-300" aria-label="Instagram">
               <FaInstagram />
             </a>
             {/* TikTok */}
-            <a href="#" className="hover:text-white transition duration-300" aria-label="TikTok">
+            <a href="https://www.tiktok.com/@algoraplus?_t=ZS-8zlteb1pmrQ&_r=1" target="_blank" className="hover:text-white transition duration-300" aria-label="TikTok">
               <FaTiktok />
             </a>
             {/* WhatsApp */}
-            <a href="#" className="hover:text-white transition duration-300" aria-label="WhatsApp">
+            <a href="https://wa.me/+201011286076"  target="_blank" className="hover:text-white transition duration-300" aria-label="WhatsApp">
               <FaWhatsapp />
             </a>
             {/* LinkedIn */}
-            <a href="#" className="hover:text-white transition duration-300" aria-label="LinkedIn">
+            <a href="https://www.linkedin.com/company/algorapluse/"  target="_blank" className="hover:text-white transition duration-300" aria-label="LinkedIn">
               <FaLinkedin />
             </a>
           </div>
@@ -58,12 +58,12 @@ function Footer() {
       <h3 className="text-white text-xl font-semibold mb-4 border-b border-white inline-block">Quick Links</h3>
       <div className="grid grid-cols-2 gap-x-8 gap-y-2 mt-4 text-sm">
         {[
-          'Home', 'About',
-          'Blog', 'Contact',
-          'Team Style Two', 'Features',
-          'Support', 'Projects',
-          'Services', 'Shop',
-          'Team', 'Support'
+          'Home', 
+          'Services',
+          'Portfolio',
+          'Blog',
+          'About',
+          'FAQs'
         ].map((link, idx) => (
           <a
             key={idx}
