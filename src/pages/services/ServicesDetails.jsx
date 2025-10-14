@@ -15,7 +15,13 @@ import {
   ArrowsPointingOutIcon,
   DevicePhoneMobileIcon,
   ShoppingCartIcon,
-  HashtagIcon
+  HashtagIcon,
+  LightBulbIcon,
+  DocumentChartBarIcon,
+  CpuChipIcon,
+  CircleStackIcon,
+  ServerIcon,
+  ArrowTrendingUpIcon
 } from '@heroicons/react/24/outline';
 import { Fragment } from 'react';
 import Cta from '../../components/home/Cta';
@@ -32,7 +38,13 @@ const iconMap = {
   ArrowsPointingOutIcon,
   DevicePhoneMobileIcon,
   ShoppingCartIcon,
-  HashtagIcon
+  HashtagIcon,
+  LightBulbIcon,
+  DocumentChartBarIcon,
+  CpuChipIcon,
+  CircleStackIcon,
+  ServerIcon,
+  ArrowTrendingUpIcon
 };
 
 const ServiceDetail = () => {

@@ -209,7 +209,7 @@ const serviceData = {
             {
                 title: "Why choose us for Mobile App Development?",
                 description:
-                    "We don’t just create apps; we build mobile solutions that scale with your business and deliver smooth performance for your users.",
+                    "We don’t just create apps, we build mobile solutions that scale with your business and deliver smooth performance for your users.",
                 features: [
                     "Cross-platform apps (iOS & Android) with one codebase.",
                     "Fast and responsive apps optimized for performance.",
@@ -220,6 +220,63 @@ const serviceData = {
                 result:
                     "Your business is literally in your customer’s pocket—making it easier to reach, engage, and retain them anytime, anywhere.",
             },
+        ],
+    },
+    'ai-automation': {
+        title: 'AI & Automation',
+        description: 'We leverage artificial intelligence and automation to transform your business operations and enhance decision-making capabilities...',
+        services: [
+            { main: 'Machine Learning Solutions', sub: 'Natural Language Processing' },
+            { main: 'Process Automation', sub: 'Predictive Analytics' },
+            { main: 'Computer Vision', sub: 'AI Integration' }
+        ],
+        lifecycle: [
+            {
+                title: 'Data Assessment',
+                description: 'We analyze your data infrastructure and identify automation opportunities.',
+                icon: "DocumentChartBarIcon"
+            },
+            {
+                title: 'Solution Design',
+                description: 'We architect AI solutions tailored to your business needs.',
+                icon: "LightBulbIcon"
+            },
+            {
+                title: 'Model Development',
+                description: 'We build and train custom AI models for your specific use case.',
+                icon: "CpuChipIcon"
+            },
+            {
+                title: 'Integration & Testing',
+                description: 'We integrate AI solutions with your existing systems and validate performance.',
+                icon: "CircleStackIcon"
+            },
+            {
+                title: 'Deployment & Monitoring',
+                description: 'We deploy models to production and set up performance monitoring.',
+                icon: "ServerIcon"
+            },
+            {
+                title: 'Optimization & Scaling',
+                description: 'We continuously improve model accuracy and scale with your needs.',
+                icon: "ArrowTrendingUpIcon"
+            }
+        ],
+        whyChooseUs: [
+            {
+                title: "Why choose us for AI & Automation?",
+                description: 
+                    "We transform complex AI technologies into practical business solutions that drive efficiency, reduce costs, and create competitive advantages.",
+                features: [
+                    "Custom AI solutions tailored to your industry and needs.",
+                    "End-to-end automation of repetitive business processes.",
+                    "Advanced analytics and predictive insights for better decisions.",
+                    "Seamless integration with existing systems and workflows.",
+                    "Ongoing support and model optimization for sustained performance."
+                ],
+                result: 
+                    "Your business becomes more intelligent and efficient—automating routine tasks while gaining predictive insights that give you a competitive edge in your market."
+            }
         ],
     }
 };

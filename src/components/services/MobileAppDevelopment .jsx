@@ -7,7 +7,7 @@ const MobileAppDevelopment = () => {
             <div className="w-full mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex flex-col lg:flex-row items-center gap-12 max-w-7xl mx-auto">
                     {/* Left side - Content */}
-                    <div className="lg:w-1/2 w-full">
+                    <div className="lg:w-1/2 w-full order-2 lg:order-1">
                         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Mobile App Development</h2>
                         <p className="text-gray-600 mb-8 text-base leading-relaxed">
                             We transform ideas into powerful mobile experiences. Our cross-platform solutions deliver seamless performance across iOS and Android while maintaining native-like quality.
@@ -62,7 +62,7 @@ const MobileAppDevelopment = () => {
                     </div>
 
                     {/* Right side - Image/Illustration */}
-                    <div className="lg:w-1/2 w-full">
+                    <div className="lg:w-1/2 w-full order-1 lg:order-2">
                         <img
                             src="../../src/assets/svg/services/mobile-app-development.png"
                             alt="Mobile App Development Illustration"
