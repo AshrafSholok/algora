@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import Hero from '../../components/common/Hero';
 import FaqsForm from './FaqsForm';
 
@@ -41,21 +41,41 @@ function Faqs() {
 // FAQItem component with animation
 function FAQItem({ question, answer }) {
     const [open, setOpen] = useState(false);
+    const [height, setHeight] = useState(0);
+    const contentRef = useRef(null);
+
+    useEffect(() => {
+        if (contentRef.current) {
+            setHeight(open ? contentRef.current.scrollHeight : 0);
+        }
+    }, [open]);
+
     return (
-        <div className={"rounded-xl bg-white shadow-lg overflow-hidden transition-all duration-400 " + (open ? '' : '')}>
+        <div className="rounded-xl bg-white shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300">
             <button
-                className="w-full flex justify-between items-center px-6 py-5 text-left focus:outline-none focus:ring-1 focus:ring-primary-500 transition-colors duration-300"
+                className={`w-full flex justify-between items-center px-6 py-5 text-left focus:outline-none focus:ring-2 focus:ring-primary-500/20 transition-all duration-300 ${open ? 'bg-gray-50' : 'hover:bg-gray-50/50'}`}
                 onClick={() => setOpen(o => !o)}
                 aria-expanded={open}
             >
                 <span className="text-lg font-semibold text-gray-900">{question}</span>
-                <svg className={"w-6 h-6 text-primary-500 transform transition-transform duration-300 " + (open ? 'rotate-180' : '')} fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" /></svg>
+                <svg 
+                    className={`w-6 h-6 text-primary-500 transform transition-transform duration-300 ${open ? 'rotate-180' : ''}`} 
+                    fill="none" 
+                    stroke="currentColor" 
+                    strokeWidth="2" 
+                    viewBox="0 0 24 24"
+                >
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+                </svg>
             </button>
             <div
-                className={"px-6 pb-5 text-gray-700 dark:text-gray-600 text-base transition-all duration-400 " + (open ? 'max-h-40 opacity-100 pt-4' : 'max-h-0 opacity-0')}
-                style={{ overflow: 'hidden' }}
+                className="text-gray-700 overflow-hidden transition-all duration-300 ease-in-out"
+                style={{ height }}
             >
-                <div className="pt-1 animate-fade-in">
+                <div 
+                    ref={contentRef}
+                    className={`px-6 pb-5 pt-2 transition-opacity duration-300 ${open ? 'opacity-100' : 'opacity-0'}`}
+                >
                     {answer}
                 </div>
             </div>
