@@ -26,7 +26,7 @@ const FeaturedPost = ({ post }) => {
 
                 {/* Title */}
                 <h2 className="text-3xl font-bold mb-4 line-clamp-2">
-                    <Link to={`/blog/${post.id}`} className="hover:text-primary-400 transition-colors">
+                    <Link to={`/blog/post/${post.id}`} className="hover:text-primary-400 transition-colors">
                         {post.title}
                     </Link>
                 </h2>

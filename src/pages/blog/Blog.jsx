@@ -60,7 +60,7 @@ function Blog() {
                 <section className="py-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
                     <div className="flex flex-col lg:flex-row gap-8">
                         {/* Blog Posts Grid */}
-                        <div className="lg:w-2/3">
+                        <div className="lg:w-2/3 lg:order-1 order-2">
                             {/* Active Filters */}
                             {(selectedCategory || selectedTag) && (
                                 <div className="mb-6 flex items-center gap-2">
@@ -111,7 +111,7 @@ function Blog() {
                         </div>
 
                         {/* Sidebar */}
-                        <div className="lg:w-1/3">
+                        <div className="lg:w-1/3 lg:order-2 order-1">
                             <BlogSidebar
                                 categories={categories}
                                 tags={tags}

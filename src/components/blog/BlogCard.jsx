@@ -25,7 +25,7 @@ const BlogCard = ({ post }) => {
                 {/* Title */}
                 <h3 className="text-xl font-bold mb-3 line-clamp-2">
                     <Link 
-                        to={`/blog/${post.id}`} 
+                        to={`/blog/post/${post.id}`} 
                         className="text-gray-900 hover:text-primary-500 transition-colors"
                     >
                         {post.title}
