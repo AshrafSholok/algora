@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowUpRight, GitBranch, ExternalLink } from "lucide-react";
+import { ArrowUpRight, GitBranch, ExternalLink, FileText } from "lucide-react";
 
 
 export default function ProjectCard({ project, onOpen }) {
@@ -64,16 +64,21 @@ export default function ProjectCard({ project, onOpen }) {
 
 
                         <div className="flex items-center gap-3 text-sm">
-                            {project.links?.repo && (
+                            {/* {project.links?.repo && (
                                 <a href={project.links.repo} target="_blank" rel="noreferrer" className="inline-flex items-center gap-1 text-blue-600 hover:underline">
                                     <GitBranch className="h-4 w-4" /> <span className="hidden sm:inline">Repo</span>
                                 </a>
-                            )}
+                            )} */}
                             {project.links?.demo && (
                                 <a href={project.links.demo} target="_blank" rel="noreferrer" className="inline-flex items-center gap-1 text-blue-600 hover:underline">
-                                    <ExternalLink className="h-4 w-4" /> <span className="hidden sm:inline">Demo</span>
+                                    <ExternalLink className="h-4 w-4" /> <span className="hidden sm:inline">Live</span>
                                 </a>
                             )}
+                            {/* {project.links?.caseStudy && (
+                                <a href={project.links.caseStudy} target="_blank" rel="noreferrer" className="inline-flex items-center gap-1 text-blue-600 hover:underline">
+                                    <FileText className="h-4 w-4" /> <span className="hidden sm:inline">Case Study</span>
+                                </a>
+                            )} */}
                         </div>
                     </div>
                 </div>

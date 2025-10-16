@@ -66,7 +66,7 @@ function ProjectModal({ project, onClose }) {
 
                                 {project.links?.demo && (
                                     <a href={project.links.demo} target="_blank" rel="noreferrer" className="px-3 py-2 border rounded-xl text-sm hover:bg-gray-50 inline-flex items-center">
-                                        <ExternalLink className="inline mr-2 h-4 w-4" /> Live Demo
+                                        <ExternalLink className="inline mr-2 h-4 w-4" /> Live Site
                                     </a>
                                 )}
 
