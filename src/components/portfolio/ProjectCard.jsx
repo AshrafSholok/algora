@@ -71,7 +71,7 @@ export default function ProjectCard({ project, onOpen }) {
                             )} */}
                             {project.links?.demo && (
                                 <a href={project.links.demo} target="_blank" rel="noreferrer" className="inline-flex items-center gap-1 text-blue-600 hover:underline">
-                                    <ExternalLink className="h-4 w-4" /> <span className="hidden sm:inline">Live</span>
+                                    <ExternalLink className="h-4 w-4" /> <span className="sm:inline">Live</span>
                                 </a>
                             )}
                             {/* {project.links?.caseStudy && (
